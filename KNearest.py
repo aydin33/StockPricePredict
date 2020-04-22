@@ -16,8 +16,8 @@ for i in range(0,len(data)):
     new_data['Date'][i] = data['Date'][i].strftime('%Y%m%d')
     new_data['Close'][i] = data['Close'][i]
 
-train = new_data[:3028]
-valid = new_data[3028:]
+train = new_data[:770]
+valid = new_data[770:]
 
 x_train = train.drop('Close', axis=1)
 y_train = train['Close']
